@@ -24,15 +24,15 @@ nav, footer, header, aside {
   display: block;
 }
 
-html, body {
-  /*height: 100%;*/
+body {
   width: 100%;
   font-size: 100%;
   line-height: 1;
-  font-size: 18px;
+  font-size: 20px;
   -ms-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+  font-family: 'Trebuchet MS';
 }
 
 input, button, textarea {
@@ -83,17 +83,50 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%;
 }
 
+.continer {
+  width: 1200px;
+  margin: 0 auto;
+}
+
 .col {
   flex: 1 0 0%;
 }
 
-.col-auto {
+/* .col-auto {
   flex: 0 0 auto;
   width: auto;
+} */
+
+.col-auto {
+  flex: auto;
 }
 
 .text-centr {
   text-align: center;
+}
+
+.margin-top-40 {
+  margin-top: 40px;
+}
+
+.sectin-title {
+  position: relative;
+  margin-bottom: 60px;
+  font-size: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.sectin-title:before {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 1px;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  bottom: -19px;
+  background-color: #000;
 }
 
 .df-al-centr {
@@ -121,3 +154,71 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center center;
   background-size: cover;
 }
+
+/* Mian */
+
+.body-wrapper {}
+
+.header {}
+
+.header__box-my-photo {
+  width: 340px;
+  padding: 15px;
+}
+
+.my-photo {
+  width: 310px;
+  height: 310px;
+  border-radius: 50%;
+  background: linear-gradient(to top left, #403f44, #4c4d51, #4e4f53);
+}
+
+.header__text {
+  padding-top: 60px;
+}
+
+.header__text h2 {
+  font-size: 48px;
+}
+
+.header__text p {
+  position: relative;
+  margin-top: 30px;
+  font-size: 30px;
+}
+
+.header__text p:before, .header__text p:after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 1px;
+  background-color: #000;
+  top: 65px;
+}
+
+.header__text p:before {
+  left: 100px;
+}
+
+.header__text p:after {
+  right: 100px;
+}
+
+.asidde {
+  width: 340px;
+  padding: 20px 15px;
+  background-color: #434247;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.article {
+  max-width: 860px;
+  padding: 15px 15px 15px 70px;
+}
+
+.about-my {
+  margin-top: -64px;
+}
+
+.footer {}
