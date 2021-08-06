@@ -11,9 +11,9 @@
 <body>
 <div class="body-wrapper">
   <header class="header continer row">
-    <div class="header__box-my-photo">
+    <div class="header__box-my-photo df-al-ju-centr">
       <div class="my-photo">
-        <img src="" alt="">
+        <img class="width100" src="img/my-photo.png" alt="Моё фото">
       </div>
     </div>
     <div class="header__text col-auto">
@@ -24,10 +24,42 @@
   <main class="continer row">
     <aside class="asidde">
       <section id="" class="">
+        <h3 class="address__title">Адрес</h3>
         <p class="asidde__address fz-22 text-centr">Россия, Ростовская область, гор. Таганрог.</p>
-        <p class="asidde__phon fz-22 text-centr margin-top-20">Tелефон: <a class="asidde__link-phon" href="tel: +79043464517">+7(904) 346 45 17</a></p>
+        <p class="asidde__phon fz-22 text-centr margin-top-20">Tелефон: 
+          <a class="asidde__link-phon" href="tel: +79043464517">
+            <span class="hover-phon-main">+7(904) 346 45 17</span>
+            <span class="hover-phon">+7(904) 346 45 17</span> 
+          </a>
+        </p>
+        <div class="asidde__box-lincs">
+          <div class="box-githab">
+            <a href="https://github.com/Max-Rus1977" target="blank"><img src="img/github.png" alt="Ссылка на github"></a>
+          </div>
+          <div class="box-email">
+            <a href="mailto:maxsvet77@yandex.ru"><img src="img/mail.png" alt="Ссылка на мою пояту 'maxsvet77@yandex.ru'"></a>
+          </div>
+        </div>
       </section>
-      <section id="" class=""></section>
+      <section id="" class="skills">
+        <h3 class="skills__title">Навыки</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>
+            <ul>
+              <li>Flexbox</li>
+            </ul>
+          </li>
+          <li>Адаптивная и кросбраузерная
+            вёрстка</li>
+          <li>JavaScript</li>
+          <li>Git</li>
+          <li>Photoshop</li>
+          <li>Figma</li>
+          <li>Английский 'A-1'</li>
+        </ul>
+      </section>
       <section id="" class=""></section>
     </aside>
     <article id="" class="article col-auto">
@@ -52,12 +84,13 @@
           <p>Ссылка на код:  <a target="blank" href="https://yandex.ru/">https://git...</a></p>
         </div>
         <div class="box-comment">
-          <p>Вёрстка адаптирована под все разрешения экран до 320px, осуществлялась с помощью сетки на подобии Bootstrap созданной самостоятельно. Слайдер реализован с помощью плагина  Owl Carusel. На сайте присутствуют табы, аккордеон, формы обратной связи и регистрации, модальные окна и небольшая анимация. Всё реализовано с помощью JS и CSS3. </p>
+          <p class="margin-top-40">Вёрстка адаптирована под все разрешения экран до 320px, осуществлялась с помощью сетки на подобии Bootstrap созданной самостоятельно. Слайдер реализован с помощью плагина  Owl Carusel. На сайте присутствуют табы, аккордеон, формы обратной связи и регистрации, модальные окна и небольшая анимация. Всё реализовано с помощью JS и CSS3. </p>
         </div>
       </section>
       <section id="" class="">
         <h3 class="sectin-title">ОБРАЗОВАНИЕ</h3>
-        
+        <p>Самостоятельно обучался frontend разработке. Имею сертификаты прохождения тестов <a href="">GeekBrains</a></p>
+        <p>Имею средне специальное образование, включающее в себя 11 классов школы №16 и Таганрогский технологический техникум питания и торговли повара 4 разряда.</p>
       </section>
       <section id="" class=""></section>
     </article>
