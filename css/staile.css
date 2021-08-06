@@ -109,9 +109,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 40px;
 }
 
+.margin-top-20 {
+  margin-top: 20px;
+}
+
+.fz-22 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 .sectin-title {
   position: relative;
+  margin-top: 30px;
   margin-bottom: 60px;
+  text-align: center;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -212,6 +223,15 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 10px;
 }
 
+.asidde__address {
+  line-height: 1.3;
+}
+
+.asidde__link-phon {
+  color: #fff;
+  cursor: pointer;
+}
+
 .article {
   max-width: 860px;
   padding: 15px 15px 15px 70px;
@@ -219,6 +239,22 @@ h1, h2, h3, h4, h5, h6 {
 
 .about-my {
   margin-top: -64px;
+}
+
+.about-my .sectin-title {
+  margin-top: 0;
+}
+
+.box-lincs {
+  margin-top: 30px;
+}
+
+.box-lincs p {
+  margin-top: 15px;
+}
+
+.box-lincs p:first-child {
+  margin: 0 0 0 20;
 }
 
 .footer {}
