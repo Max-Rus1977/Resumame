@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/font.css">
   <link rel="stylesheet" href="css/staile.css">
+  <link rel="stylesheet" href="css/media.css">
   <title>Resumame</title>
 </head>
 <body>
@@ -13,7 +14,7 @@
   <header class="header continer row">
     <div class="header__box-my-photo df-al-ju-centr">
       <div class="my-photo">
-        <img class="width100" src="img/my-photo.png" alt="Моё фото">
+        <img class="width100" src="img/my-photo.jpg" alt="Моё фото">
       </div>
     </div>
     <div class="header__text col-auto">
@@ -21,28 +22,31 @@
       <p class="text-centr">trainee Frontend Developer</p>
     </div>
   </header>
-  <main class="continer row">
+  <main class="main continer row">
     <aside class="asidde">
-      <section id="" class="">
-        <h3 class="address__title">Адрес</h3>
+      <section class="adres sections-line">
+        <h3 class="address__title">Адрес:</h3>
         <p class="asidde__address fz-22 text-centr">Россия, Ростовская область, гор. Таганрог.</p>
-        <p class="asidde__phon fz-22 text-centr margin-top-20">Tелефон: 
+      </section>
+      <section class="contacts sections-line">  
+        <h3 class="contacts__title">Контакты:</h3>
+        <p class="asidde__phon fz-22 margin-top-20">Tелефон: 
           <a class="asidde__link-phon" href="tel: +79043464517">
             <span class="hover-phon-main">+7(904) 346 45 17</span>
             <span class="hover-phon">+7(904) 346 45 17</span> 
           </a>
         </p>
         <div class="asidde__box-lincs">
-          <div class="box-githab">
-            <a href="https://github.com/Max-Rus1977" target="blank"><img src="img/github.png" alt="Ссылка на github"></a>
-          </div>
-          <div class="box-email">
-            <a href="mailto:maxsvet77@yandex.ru"><img src="img/mail.png" alt="Ссылка на мою пояту 'maxsvet77@yandex.ru'"></a>
+          <div class="box-githab df-al-centr fz-22">
+            <p>Гитхаб репозиорий:</p><a href="https://github.com/Max-Rus1977" target="blank">
+              <img class="hover-git-img" src="img/githubWC.png" alt="Ссылка на github">
+              <span class="hover-git-text">перейти ... →</span>
+            </a>
           </div>
         </div>
       </section>
-      <section id="" class="skills">
-        <h3 class="skills__title">Навыки</h3>
+      <section class="skills sections-line">
+        <h3 class="skills__title">Навыки:</h3>
         <ul>
           <li>HTML5</li>
           <li>CSS3</li>
@@ -73,18 +77,20 @@
         </section>
       <section id="" class="">
         <h3 class="sectin-title">МОИ ПРОЕКТЫ</h3>
-        <div class="box-lincs">
-          <p>Инстаботы</p>
-          <p>Ссылка на сайт: <a target="blank" href="https://yandex.ru/">https://git...</a></p>
-          <p>Ссылка на код:  <a target="blank" href="https://yandex.ru/">https://git...</a></p>
-        </div>
-        <div class="box-lincs">
-          <p>Стамотология</p>
-          <p>Ссылка на сайт: <a target="blank" href="https://yandex.ru/">https://git...</a></p>
-          <p>Ссылка на код:  <a target="blank" href="https://yandex.ru/">https://git...</a></p>
+        <div class="wrapper-box-lins row">
+          <div class="box-lincs col">
+            <p>Инстаботы</p>
+            <p>Ссылка на сайт: <a target="blank" href=" https://max-rus1977.github.io/Instabots/">https://git...site</a></p>
+            <p>Ссылка на код:  <a target="blank" href="https://github.com/Max-Rus1977/Instabots">https://git...code</a></p>
+          </div>
+          <div class="box-lincs col">
+            <p>Стамотология</p>
+            <p>Ссылка на код: <a target="blank" href="https://github.com/Max-Rus1977/Smart-dentistry">https://git...code</a></>
+            <p>Ссылка на сайт: <a target="blank" href="https://max-rus1977.github.io/Smart-dentistry/">https://git...site</a></>
+          </div>
         </div>
         <div class="box-comment">
-          <p class="margin-top-40">Вёрстка адаптирована под все разрешения экран до 320px, осуществлялась с помощью сетки на подобии Bootstrap созданной самостоятельно. Слайдер реализован с помощью плагина  Owl Carusel. На сайте присутствуют табы, аккордеон, формы обратной связи и регистрации, модальные окна и небольшая анимация. Всё реализовано с помощью JS и CSS3. </p>
+          <p class="margin-top-40">Вёрстка адаптирована под все разрешения экран до 320px, осуществлялась с помощью сетки на подобии Bootstrap созданной самостоятельно. Слайдер реализован с помощью плагина  Owl Carusel. На сайте присутствуют табы, аккордеон, формы обратной связи с валидацией и регистрации, модальные окна и небольшая анимация, реализованная с помощью JS и CSS3. </p>
         </div>
       </section>
       <section id="" class="">
@@ -92,12 +98,23 @@
         <p>Самостоятельно обучался frontend разработке. Имею сертификаты прохождения тестов <a href="">GeekBrains</a></p>
         <p>Имею средне специальное образование, включающее в себя 11 классов школы №16 и Таганрогский технологический техникум питания и торговли повара 4 разряда.</p>
       </section>
-      <section id="" class=""></section>
+      <section id="" class="">
+        <h3 class="sectin-title">МЕСТА РАБОТЫ</h3>
+          <p>Основная сфера дохода начиная с 2008 года работа на себя в сфере строительства.  Также начиная с этого времени создал и руководил бригадой по таможенным досмотрам.</p>
+          <p class="margin-top-40">Последнее официальное место работы “Забсиб гаспром -газификация”. Работа вахтовым методом:</p>
+          <p class="margin-top-10">о. Сахалин, гор Южно-Сахалинск. Строительство военного госпиталя. Должность - облицовщик плиточник.</p>
+          <p class="margin-top-10">Хабаровский край, посёлок Тейсин. Военный, закрытый объект.  Должность - монтажник.</p>
+      </section>
     </article>
-    
   </main>
   <footer class="footer"></footer>
 </div>
   <script src="comod.js"></script>
 </body>
-</html>
+</html> 
+
+ 
+
+ 
+
+ 

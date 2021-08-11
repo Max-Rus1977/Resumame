@@ -60,10 +60,6 @@ a:hover {
   text-decoration: none;
 }
 
-/* ul li {
-  list-style: none;
-} */
-
 img {
   vertical-align: top;
 }
@@ -112,6 +108,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 20px;
 }
 
+.margin-top-10 {
+  margin-top: 10px;
+}
+
 .fz-22 {
   font-size: 22px;
   font-weight: bold;
@@ -137,6 +137,19 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
   bottom: -19px;
   background-color: #000;
+}
+
+.sections-line {
+  position: relative;
+}
+
+.sections-line:before {
+  content: '';
+  position: absolute;
+  width: 98%;
+  height: 1px;
+  bottom: -17px;
+  background-color: #fff;
 }
 
 .df-al-centr {
@@ -173,10 +186,12 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .my-photo {
-  width: 310px;
-  height: 310px;
+  width: 336px;
   border-radius: 50%;
-  /* background: linear-gradient(to top left, #403f44, #4c4d51, #4e4f53); */
+}
+
+.my-photo img {
+  border-radius: 25px;
 }
 
 .header__text {
@@ -212,15 +227,11 @@ h1, h2, h3, h4, h5, h6 {
 
 .asidde {
   width: 340px;
+  margin-top: 15px;
   padding: 20px 15px;
   background-color: #434247;
   color: #fff;
   border-radius: 10px;
-}
-
-.address__title {
-  font-size: 30px;
-  font-weight: bold;
 }
 
 .asidde__address {
@@ -265,27 +276,60 @@ h1, h2, h3, h4, h5, h6 {
   transform: translate(-182px, 3px);
 }
 
+.hover-git-img {
+  position: relative;
+  transition: 0.5s;
+  display: block;
+  left: 50%;
+  transform: translate(-50%, 21%);
+  transition: 0.5s;
+}
+
+.box-githab a:hover .hover-git-img {
+  opacity: 0;
+  transform: translate(-50%, 75%);
+}
+
+.hover-git-text {
+  position: relative;
+  display: block;
+  left: 50%;
+  color: #fff;
+  font-size: 18px;
+  opacity: 0;
+  transform: translate(-50%, -250%);
+  transition: 0.5s;
+}
+
+.box-githab a:hover .hover-git-text {
+  opacity: 1;
+  transform: translate(-50%, -150%);
+  transition: 0.5s;
+}
+
 .asidde__box-lincs {
   display: flex;
   justify-content: space-evenly;
-  position: relative;
-  width: 70%;
   margin: 20px auto;
 }
 
-.asidde__box-lincs:before {
-  content: '';
-  position: absolute;
-  width: 140%;
-  height: 1px;
-  bottom: -17px;
-  background-color: #fff;
+.box-githab {
+  justify-content: flex-start;
+  width: 100%;
 }
 
-.skills__title {
+.box-githab p {
+  width: 54%;
+}
+
+.address__title, .skills__title, .contacts__title {
   margin-top: 40px;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
+}
+
+.address__title {
+  margin-top: 0;
 }
 
 .skills ul {
@@ -316,19 +360,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-my {
-  margin-top: -100px;
+  margin-top: -45px;
 }
 
 .about-my .sectin-title {
   margin-top: 0;
 }
 
-.box-lincs {
-  margin-top: 30px;
-}
-
 .box-lincs p {
   margin-top: 15px;
+  transition: 0.5s;
 }
 
 .box-lincs p:first-child {
@@ -341,4 +382,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Trebuchet MS';
   font-style: italic;
   color: #000;
+  transition: 0.5s;
+}
+
+.box-lincs p a:hover {
+  color: #434247;
 }
