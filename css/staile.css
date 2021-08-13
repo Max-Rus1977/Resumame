@@ -373,7 +373,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .box-lincs p:first-child {
-  margin: 0 0 0 20;
+  margin: 0 0 0 20px;
   font-size: 24px;
   font-weight: bold;
 }
